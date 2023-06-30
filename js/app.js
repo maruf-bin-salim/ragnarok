@@ -24,6 +24,7 @@ reviewGrids.forEach((grid) => {
 });
 
 
+
 function submitForm() {
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
@@ -35,9 +36,6 @@ function submitForm() {
     // console log the submitted data
     console.log('Submitted data:\nName: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + '\nMessage: ' + message);
 
-
-
-
     // Reset the form
     document.getElementById('name').value = '';
     document.getElementById('email').value = '';
@@ -45,4 +43,11 @@ function submitForm() {
     document.getElementById('message').value = '';
 
     return false; // Prevent form submission
+}
+
+function submitNewsletter(){
+    var email = document.getElementById('email-newsletter').value;
+    console.log('Submitted data:\nEmail: ' + email);
+    document.getElementById('email-newsletter').value = '';
+    return false;
 }

@@ -145,6 +145,7 @@ html, body {
     font-weight: 400;
     margin-bottom: 30px;
 }
+
 .slider-inner {
     width: 100%;
     display: grid;
@@ -157,13 +158,15 @@ html, body {
     width: 100%;
     padding: 20px;
 }
+
 .quote-icon {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
 }
-.quote-icon svg{
+
+.quote-icon svg {
     height: 20px;
     width: 20px;
 }
@@ -175,9 +178,11 @@ html, body {
     font-family: 'Dosis', sans-serif;
     text-align: center;
 }
+
 .review-main {
     text-align: center;
 }
+
 .dots {
     text-align: center;
     margin-top: 10px;
@@ -240,6 +245,53 @@ html, body {
     background-size: 60vw;
 }
 
+.newsletter-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.newsletter-title {
+    font-family: 'Quicksand', sans-serif;
+    color: #3a3a3a;
+    font-weight: 400;
+    margin: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.newsletter-input-container {
+    display: flex;
+    background-color: rebeccapurple;
+    height: 50px;
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+.newsletter-input-container input {
+    border: 1px solid #c2c2c2;
+    flex: 1;
+    padding-left: 15px;
+}
+
+.subscribe-button {
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #3a3a3a;
+    color: #ebebeb;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 /* contact us page */
 
 .contact-title-container {
@@ -284,6 +336,7 @@ html, body {
     grid-template-columns: 1fr 1fr;
     gap: 15px;
 }
+
 .input-container {
     display: flex;
     flex-direction: column;
@@ -295,15 +348,18 @@ html, body {
     border: 1px solid #c2c2c2;
     border-radius: 5px;
 }
+
 .input-container input:focus {
     outline: none;
     border: 1px solid #3a3a3a;
 }
+
 .input-container textarea {
     padding: 10px;
     border: 1px solid #c2c2c2;
     border-radius: 5px;
 }
+
 .input-container textarea:focus {
     outline: none;
     border: 1px solid #3a3a3a;
@@ -320,6 +376,7 @@ html, body {
     outline: none;
     width: max-content;
 }
+
 @media (max-width: 750px) {
     /* CSS styles for screens under 750px */
     /* Add your styles here */
@@ -366,18 +423,30 @@ html, body {
         display: inline-block;
     }
 
+    .newsletter-input-container {
+        width: 90%;
+    }
+
+    .newsletter-title {
+        font-size: 24px;
+    }
+
     /* contact us page */
     .contact-title-container {
         padding: 20px;
     }
+
     .contact-title {
         font-size: 32px;
     }
+
     .contact-information {
         width: 100%;
     }
+
     .contact-form {
         width: 100%;
     }
+
 
 }
