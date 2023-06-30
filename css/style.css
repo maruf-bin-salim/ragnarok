@@ -114,9 +114,10 @@ html, body {
 }
 
 .item-button {
-    padding: 10px;
+    padding: 15px;
     margin: 10px;
     margin-left: 0px;
+    font-weight: 700;
     cursor: pointer;
     background-color: #3a3a3a;
     color: #ebebeb;
@@ -239,8 +240,86 @@ html, body {
     background-size: 60vw;
 }
 
+/* contact us page */
 
+.contact-title-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    width: 100%;
+}
 
+.contact-title {
+    font-weight: 100;
+    font-size: 36px;
+    font-family: 'Quicksand', sans-serif;
+    color: #3a3a3a;
+    text-align: center;
+}
+
+.contact-information {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+
+.contact-list {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+}
+
+.two-column-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-container input {
+    padding: 10px;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+}
+.input-container input:focus {
+    outline: none;
+    border: 1px solid #3a3a3a;
+}
+.input-container textarea {
+    padding: 10px;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+}
+.input-container textarea:focus {
+    outline: none;
+    border: 1px solid #3a3a3a;
+}
+
+.submit-button {
+    padding: 15px;
+    margin: 10px;
+    margin-left: 0px;
+    cursor: pointer;
+    background-color: #3a3a3a;
+    color: #ebebeb;
+    border: none;
+    outline: none;
+    width: max-content;
+}
 @media (max-width: 750px) {
     /* CSS styles for screens under 750px */
     /* Add your styles here */
@@ -285,6 +364,20 @@ html, body {
 
     .dot {
         display: inline-block;
+    }
+
+    /* contact us page */
+    .contact-title-container {
+        padding: 20px;
+    }
+    .contact-title {
+        font-size: 32px;
+    }
+    .contact-information {
+        width: 100%;
+    }
+    .contact-form {
+        width: 100%;
     }
 
 }
