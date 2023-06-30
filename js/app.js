@@ -49,28 +49,58 @@ function submitForm() {
         },
         body: JSON.stringify(payload)
     })
-    .then(function(response) {
-        if (response.ok) {
-            console.log('Form data submitted successfully');
-            // Reset the form
-            document.getElementById('name').value = '';
-            document.getElementById('email').value = '';
-            document.getElementById('phone').value = '';
-            document.getElementById('message').value = '';
-        } else {
-            console.log('Failed to submit form data');
-        }
-    })
-    .catch(function(error) {
-        console.error('Error:', error);
-    });
+        .then(function (response) {
+            if (response.ok) {
+                console.log('Form data submitted successfully');
+                // Reset the form
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('phone').value = '';
+                document.getElementById('message').value = '';
+            } else {
+                console.log('Failed to submit form data');
+            }
+        })
+        .catch(function (error) {
+            console.error('Error:', error);
+        });
 
     return false; // Prevent form submission
 }
 
-function submitNewsletter(){
+function submitNewsletter() {
     var email = document.getElementById('email-newsletter').value;
     console.log('Submitted data:\nEmail: ' + email);
-    document.getElementById('email-newsletter').value = '';
-    return false;
+
+
+    // you can perform further validation here if needed
+
+    // Create the JSON payload
+    var payload = {
+        email: email
+    };
+
+    // Send the form data to the endpoint
+    fetch('https://ragnarok-backend.netlify.app/api/send-newsletter-mail', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload)
+    })
+        .then(function (response) {
+            if (response.ok) {
+                console.log('Form data submitted successfully');
+                // Reset the form
+                document.getElementById('email-newsletter').value = '';
+            } else {
+                console.log('Failed to submit form data');
+            }
+        }
+        )
+        .catch(function (error) {
+            console.error('Error:', error);
+        }
+        );
+    return false; // Prevent form submission
 }
