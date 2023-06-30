@@ -116,6 +116,7 @@ html, body {
 .item-button {
     padding: 10px;
     margin: 10px;
+    margin-left: 0px;
     cursor: pointer;
     background-color: #3a3a3a;
     color: #ebebeb;
