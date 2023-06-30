@@ -1,15 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
 }
+
 html, body {
     height: 100%;
     width: 100%;
 }
 
 .navigation-bar {
-    border-bottom: 1px solid black;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.navigation-bar-links {
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+}
+
+.navigation-link {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    color: #3a3a3a;
+}
+
+.active {
+    text-decoration: underline;
 }
 
 .background-image-container {
@@ -19,3 +44,103 @@ html, body {
 .background-image-container img {
     width: 100%;
 }
+
+.site-title-container {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+.site-title {
+    font-weight: 100;
+    font-size: 36px;
+    font-family: 'Quicksand', sans-serif;
+    color: #3a3a3a;
+}
+
+.items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+
+}
+
+.item {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.item-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.item-main-image-container {
+    width: 100%;
+    max-width: 100%;
+}
+
+.item-main-image-container img {
+    width: 100%;
+}
+
+.item-information {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-title {
+    margin: 10px;
+    font-family: 'Quicksand', sans-serif;
+    color: #3a3a3a;
+    font-weight: 500;
+}
+
+.item-description {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.item-button {
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #3a3a3a;
+    color: #ebebeb;
+    border: none;
+    outline: none;
+}
+
+
+.two-column-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.three-column-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+
+.background-logo-container {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background: url('../assets/background-logo.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-size: 100vh;
+
+}
+
