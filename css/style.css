@@ -24,7 +24,7 @@ html, body {
 .navigation-bar-links {
     display: flex;
     gap: 20px;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .navigation-link {
@@ -244,6 +244,10 @@ html, body {
 @media (max-width: 750px) {
     /* CSS styles for screens under 750px */
     /* Add your styles here */
+
+    .navigation-link {
+        font-size: 24px;
+    }
 
     .site-title-container {
         padding: 50px;
