@@ -81,7 +81,7 @@ function submitNewsletter() {
     };
 
     // Send the form data to the endpoint
-    fetch('https://ragnarok-backend.netlify.app/api/send-newsletter-mail', {
+    fetch('https://ragnarok-backend.netlify.app/api/send-subscribe-data-mail', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
