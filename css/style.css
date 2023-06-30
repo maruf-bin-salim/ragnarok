@@ -70,7 +70,7 @@ html, body {
 }
 
 .item {
-    width: 70%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     gap: 100px;
@@ -120,6 +120,70 @@ html, body {
     color: #ebebeb;
     border: none;
     outline: none;
+}
+
+
+.review-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.review {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.slider {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.review-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.review-title {
+    font-family: 'Quicksand', sans-serif;
+    color: #3a3a3a;
+    font-weight: 400;
+}
+.slider-inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    transition: transform 0.5s ease;
+
+}
+
+.review {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+    height: max-content;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+
+}
+
+.dot.active {
+    background-color: #3a3a3a;
 }
 
 
@@ -199,4 +263,13 @@ html, body {
         height: 60vh;
         background-size: 100vw;
     }
+
+    .slider-inner {
+        display: flex;
+    }
+
+    .dot {
+        display: inline-block;
+    }
+
 }
